@@ -50,9 +50,9 @@ An instance in any state may be deleted.
 1. A dialogue box will appear, asking for confirmation to continue.  Click *Submit*.
 1. If the instance is running, it will enter the **stopping** state, after which it will be deleted.  If the instance is already stopped, it will be deleted immediately.
 
-### Connect via SSH
+### Connect via SSH (for Linux-based instances)
 
- Use this command to configure SSH access to the instance.  You will be asked to provide your SSH public key, or to select an existing key.
+Use this command to configure SSH access to the instance.  You will be asked to provide your SSH public key, or to select an existing key.
 
   1. From the **Compute** tab, click the **Action** menu to the right of the instance, and select **Get SSH command**.
   1. The **Get SSH command** dialogue box will appear.
@@ -62,3 +62,13 @@ An instance in any state may be deleted.
   1. The dialogue box will disappear.  A firewall rule will be created allowing SSH traffic (port 22) to this instance.  A notification will appear, providing the SSH command that can be used to connect to the instance.
 
 **Note:**  Your SSH client should already be configured with the private key for the public key you have selected.
+
+### Connect via Remote Desktop (for Microsoft Windows-based instances)
+
+Use this command to configure Remote Desktop (RDP) access to the instance.
+
+1. From the **Compute** tab, click the **Action** menu to the right of the instance, and select *Set password*.  This operation can only be performed on an instance in the **running** state.
+1. The *Set password* dialogue box will appear.  Enter your username, and click *Submit*.
+   **Note:**  Setting the password for an account that already exists can cause loss of the account's encrypted data.
+1. Momentarily, a notification will appear, displaying the IP address of the instance, and the credentials to log in.
+1. Configure your Remote Desktop client with these parameters.  You can now connect to the instance.
