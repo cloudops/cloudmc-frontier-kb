@@ -10,25 +10,13 @@ categories:
   articles:
       - environments-to-organize-workloads-and-users.md
       - main-cloud.ca-entities.md
-      - what-is-an-instance-template.md
       - what-is-a-vpc.md
-      - system-roles.md
-      - what-is-object-storage.md
 - category: gcp-compute-service
   icon: fa fa-cloud
   articles:
       - gcp-working-with-instances.md
       - gcp-working-with-disks.md
       - gcp-instance-groups.md
-- category: object-storage-service
-  icon: fa fa-hdd-o
-  articles:
-      - object-storage-terminology.md
-      - use-s3-api-for-object-storage.md
-      - how-to-obtain-object-storage-api-credentials.md
-      - manage-my-objects-using-the-swift-command-line-client.md
-      - manage-my-objects-using-the-object-storage-api.md
-      - manage-my-objects-using-the-self-service-portal.md
 - category: reporting
   icon: fa fa-signal
   articles:
@@ -40,29 +28,8 @@ categories:
       - enable-two-factor-authentication.md
       - single-entrypoint.md
       - display-dates-in-your-preferred-time-zone.md
-      - restrict-user-access.md
       - branding.md
       - manage-users.md
       - rbac.md
       - rbac-use-cases-basic.md
       - rbac-use-cases-advanced.md
-- category: how-to
-  icon: fa fa-question
-  articles:
-      - create-site-to-site-vpn-on-vpc.md
-      - install-and-config-cloudmonkey.md
-      - kernel-upgrade-on-ubuntu-debian.md
-      - force-reboot-an-instance.md
-- category: automation
-  icon: fa fa-retweet
-  articles:
-      - deploy-virtual-machine-using-terraform.md
-      - deploy-virtual-machine-using-cloudmonkey.md
-      - deploy-a-kubernetes-cluster-with-rancher-2-x.md
-- category: vpn
-  icon: fa fa-shield
-  articles:
-      - cca-using-remote-access.md
-      - cca-client-config-mac.md
-      - cca-client-config-windows.md
-      - cca-client-config-ubuntu.md

@@ -1,3 +1,0 @@
----
-name: CloudStack Compute Service
----
