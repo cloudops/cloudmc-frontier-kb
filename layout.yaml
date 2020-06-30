@@ -33,3 +33,4 @@ categories:
       - rbac.md
       - rbac-use-cases-basic.md
       - rbac-use-cases-advanced.md
+      - openid-connect.md
