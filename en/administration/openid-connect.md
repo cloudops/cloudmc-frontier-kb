@@ -6,7 +6,7 @@ slug: authenticating-with-openid-connect
 
 ### How to configure an external OpenID Connect provider
 
-Integrating CloudMC with an OpenID Connect provider is a three-stop process, described in the following sections:
+Integrating CloudMC with an OpenID Connect provider is a three-step process, described in the following sections:
    - Configure the identity provider
    - Configure CloudMC
    - Submit a **callback URL** to the provider
