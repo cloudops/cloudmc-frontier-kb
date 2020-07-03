@@ -11,6 +11,7 @@ categories:
       - environments-to-organize-workloads-and-users.md
       - main-cloud.ca-entities.md
       - what-is-a-vpc.md
+      - authentication.md
 - category: gcp-compute-service
   icon: fa fa-cloud
   articles:
