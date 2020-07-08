@@ -18,6 +18,11 @@ categories:
       - gcp-working-with-instances.md
       - gcp-working-with-disks.md
       - gcp-instance-groups.md
+- category: azure-compute-service
+  icon: fa fa-cloud
+  articles:
+      - azure-working-with-instances.md
+      - azure-working-with-disks.md
 - category: reporting
   icon: fa fa-signal
   articles:
