@@ -10,7 +10,7 @@ A **user** is a person that accesses the CloudMC console to manage his virtual r
 
 A **department** is a hierarchical grouping of users within an organization. Grouping users by department is entirely optional, but may help in quickly selecting multiple users who work closely together.
 
-A **role** is a named collection of permissions within an organization. A user may be assigned multiple roles (which are additive) to determine what he his able to do in the CloudMC console. See [Using system roles to enforce access control](system-roles.md) to learn more about this concept.
+A **role** is a named collection of permissions within an organization. A user may be assigned multiple roles (which are additive) to determine what he his able to do in the CloudMC console. See [Role-based access controls](../administration/rbac.md) to learn more about this concept.
 
 A **service** is an abstraction through which a user provision and interacts with his virtual resources.
 
