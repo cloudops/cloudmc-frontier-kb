@@ -25,6 +25,7 @@ Any user with the **User** role, or any other role which has the *Environments: 
 1. Click on *Add environment*.  The *Add environment* page will appear.
 1. Enter a name and an optional description for the environment.
 1. If you wish to allow users from other organizations to be added as members, select **Allow external members**.
+1. For some services, a disclosure triangle will be available with advanced options.  See the *Working with instances* article for your particular service to get more details.
 1. Click *Next*.  The environment will be provisioned.
 1. The *Manage members* page will appear momentarily.  Here, you may:
    - Select one or more individual users from the list

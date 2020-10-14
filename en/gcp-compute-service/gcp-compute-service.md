@@ -1,3 +1,3 @@
 ---
-name: GCP Compute Service
+name: GCP Service
 ---

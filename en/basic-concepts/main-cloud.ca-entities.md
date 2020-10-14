@@ -6,7 +6,7 @@ slug: main-cloudmc-entities
 
 An **organization** is the entity to which we bill the services consumed on the CloudMC infrastructure. It hold various attributes that are common to all its users (e.g.: login page, logo, authentication type, policies, etc).
 
-A **user** is a person that accesses the CloudMC console to manage his virtual resources.
+A **user** is a person that accesses the CloudMC console to manage virtual resources.
 
 A **department** is a hierarchical grouping of users within an organization. Grouping users by department is entirely optional, but may help in quickly selecting multiple users who work closely together.
 

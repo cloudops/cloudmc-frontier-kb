@@ -13,9 +13,9 @@ To manage instance groups, navigate to the desired GCP environment, click on the
 ### Adding an instance group
 
 1. From the *Instance groups* page, click on *Add instance group*.  The *Add instance group* page will appear.
-1. Provide a name for the instance group, and an optional description.
+1. Enter a name, or accept the default, and enter a description if desired.
 1. Select the region and zone where the instances to group are located.
-1. If the selected zone has instances, a pop-up list labeled **Instances** will appear beneath the zone.  Select the instances to become members of this instance group.  Note that changing a zone will clear the list of instances already selected.
+1. If the selected subnetwork contains instances, a pop-up list labeled **Instances** will appear beneath the subnetwork.  You may choose zero or more instances from this list to become members of this instance group.  Note that changing a zone will clear the list of instances already selected.
 1. Click *Submit* to create the group.
 1. You will be returned to the *Instance groups* page, the instance group will be created, and the instances will be added to the group.
 
@@ -23,7 +23,7 @@ To manage instance groups, navigate to the desired GCP environment, click on the
 
 ### Managing an instance group
 
-1. From the *Instance groups* page, click on the **Action** menu, and select *Manage instance members*.  The *Manage instance members* dialogue box will appear.
+1. From the *Instance groups* page, click on the **Action** menu, and select *Manage instance group members*.  The *Manage instance group members* dialogue box will appear.
 1. The pop-up list labeled **Instances** will contain a list of the instances that are members of this group.
    - To remove an instance from the group, click the X mark to the right of an instance's name.
    - To add an instance to the group, click on the pop-up list, then click on the name of the instance you wish to add.
