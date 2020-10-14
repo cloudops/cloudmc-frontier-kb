@@ -4,7 +4,7 @@ slug: gcp-health-checks
 ---
 
 
-Google Cloud Platform health checks allow you to define the criteria for availability of an instance providing a backend service.  A health check is applied to an instance group when configuring a GCP backend service.  Once a health check is active, GCP will send a simple HTTP request to the target instance every 5 seconds.  If the instance responds with an HTTP 200 OK, the instance is considered healthy.  If the request times out after 5 seconds, or if the response is anything other than HTTP 200 OK, the instance is considered unhealthy, and it will not be sent any incoming requests until it returns to a healthy state.
+Google Cloud Platform health checks allow you to define the criteria for availability of an instance providing a backend service.  A health check is applied to an instance group when configuring a GCP backend service.  Once a health check is active, GCP will send a simple request to the target instance every 5 seconds.  If the instance responds with an HTTP 200 OK, the instance is considered healthy.  If the request times out after 5 seconds, or if the response is anything other than HTTP 200 OK, the instance is considered unhealthy, and it will not be sent any incoming requests until it returns to a healthy state.
 
 Health checks can be managed by navigating to your GCP environment in CloudMC, clicking on the **Compute** tab, and clicking on the **Health checks** item.
 
