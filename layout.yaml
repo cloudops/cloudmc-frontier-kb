@@ -7,6 +7,7 @@ categories:
       - need-more-help.md
 - category: basic-concepts
   icon: fa fa-globe
+  featured: true
   articles:
       - environments-to-organize-workloads-and-users.md
       - main-cloud.ca-entities.md
@@ -18,6 +19,9 @@ categories:
       - gcp-working-with-instances.md
       - gcp-working-with-disks.md
       - gcp-instance-groups.md
+      - gcp-health-check.md
+      - gcp-load-balancing.md
+      - gcp-ssl-certs.md
 - category: azure-compute-service
   icon: fa fa-cloud
   articles:
