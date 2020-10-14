@@ -6,7 +6,7 @@ slug: gcp-working-with-instances
 
 To create, modify, or delete an instance, an account with the *User* role must be a member of the environment which contains the instance, and also have the *Editor* or *Owner* environment role assigned.  An account with the *Administrator* role or higher may create, modify, or delete instances in an environment.
 
-To access instances, navigate to your GCP environment and click on the **Compute** tab.
+To access instances, navigate to your GCP environment and click on the **Compute** tab.  At least one VPC must exist before an instance can be created.
 
 ### Add an instance
 
@@ -18,7 +18,7 @@ To access instances, navigate to your GCP environment and click on the **Compute
    - **New ephemeral IP:**  Your instance will be assigned a new public IP every time it boots.
    - **New static IP:**  A public IP will be reserved specifically for this instance, and will be the same every time it boots.
 1. You may choose to specify a startup script to be executed every time the instance boots.  Enter the desired startup script in the text box labeled **Automation - Startup script**. For instances running Unix-based operating systems, this can be a shell script, and for Windows instances this can be a metadata key, where the value is the desired batch commands or PowerShell commands.
-1. Click *Submit*.  The new instance will appear in the list, and will be in the **provisioning** state.  Once the instance has been provisioned, it will transition to the **running** state.
+1. Click *Submit*.  The new instance will appear in the list, and will be in the **Provisioning** state.  Once the instance has been provisioned, it will transition to the **Running** state.
 
 ### Get instance details
 
@@ -31,14 +31,14 @@ To access instances, navigate to your GCP environment and click on the **Compute
 
 1. From the **Compute** tab, click on the **Action** menu to the right of the instance, and select *Stop instance*.
 1. A dialogue box will appear, asking for confirmation to continue.  Click *Submit*.
-1. The instance will enter the **stopping** state.  Once the instance has stopped running, it will enter the **terminated** state.
+1. The instance will enter the **Stopping** state.  Once the instance has stopped running, it will enter the **Terminated** state.
 
 **Note:** If the instance does not stop within 90 seconds, the instance will be force-stopped.
 
 ### Starting a stopped instance
 
 1. From the **Compute** tab, click on the **Action** menu to the right of the instance, and select *Start instance*.
-1. The instance will enter the **provisioning** state.  Once the instance is booting, it will enter the **running** state.
+1. The instance will enter the **Provisioning** state.  Once the instance is booting, it will enter the **Running** state.
 
 ### Delete an instance
 
@@ -48,7 +48,7 @@ An instance in any state may be deleted.
 
 1. From the **Compute** tab, click on the **Action** menu to the right of the instance, and select *Delete*.
 1. A dialogue box will appear, asking for confirmation to continue.  Click *Submit*.
-1. If the instance is running, it will enter the **stopping** state, after which it will be deleted.  If the instance is already stopped, it will be deleted immediately.
+1. If the instance is running, it will enter the **Stopping** state, after which it will be deleted.  If the instance is already stopped, it will be deleted immediately.
 
 ### Connect via SSH (for Linux-based instances)
 
@@ -67,7 +67,7 @@ Use this command to configure SSH access to the instance.  You will be asked to 
 
 Use this command to configure Remote Desktop (RDP) access to the instance.
 
-1. From the **Compute** tab, click the **Action** menu to the right of the instance, and select *Set password*.  This operation can only be performed on an instance in the **running** state.
+1. From the **Compute** tab, click the **Action** menu to the right of the instance, and select *Set password*.  This operation can only be performed on an instance in the **Running** state.
 1. The *Set password* dialogue box will appear.  Enter your username, and click *Submit*.
    **Note:**  Setting the password for an account that already exists can cause loss of the account's encrypted data.
 1. Momentarily, a notification will appear, displaying the IP address of the instance, and the credentials to log in.

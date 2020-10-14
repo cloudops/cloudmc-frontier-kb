@@ -1,8 +1,12 @@
 ---
 title: "Authenticating with OpenID Connect"
-slug: authenticating-with-openid-connect
+slug: openid-connect
 ---
 
+
+### Overview of OpenID Connect
+
+OpenID Connect is authentication system based on OAuth 2.0, and is currently the most widely adopted external authentication system.  
 
 ### How to configure an external OpenID Connect provider
 
