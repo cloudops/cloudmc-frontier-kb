@@ -42,13 +42,13 @@ If a backend service has already been defined, CloudMC enables the creation of a
 1. From the *Load balancers* page, click on the *Add load balancer* button.
 1. Enter a name for the load balancer, or accept the default.
 1. Select the backend service for this load balancer.
-1. Select how to allocate a public IP address.  See *Create a forwarding rule* in the **Manual configuration** section below for more details.
+1. Select how to allocate an external IP address.  See *Create a forwarding rule* in the **Manual configuration** section below for more details.
 1. Select which protocol to listen on for incoming requests.
    - If HTTPS is selected, a pop-up menu containing a list of uploaded SSL certificates will appear.  Select the appropriate certificate for this load balancer.
 1. Click *Submit*.
 1. The *Load balancers* page will appear, and the new load balancer will appear in the list.
 
-The new load balancer is now active and ready for testing with public traffic.  The public IP address for your load balancer is listed on both the *Forwarding rules* and the *Load balancers* page.
+The new load balancer is now active and ready for testing with public traffic.  The external IP address for your load balancer is listed on both the *Forwarding rules* and the *Load balancers* page.
 
 #### Manual configuration
 
@@ -69,10 +69,10 @@ The new load balancer is now active and ready for testing with public traffic.  
 1. Create a forwarding rule.
    - Click on **Forwarding rules**, and click on the *Add forwarding rule* button.
    - Enter a name, or accept the default, and enter a description if desired.
-   - Select how you wish a public IP address to be allocated for the load balancer:
+   - Select how you wish an external IP address to be allocated for the load balancer:
       - To allocate an IP address solely for this load balancer and have it released when this forwarding rule is deleted, leave *Reserve a new static IP address* unchecked, and select **Ephemeral** in the pop-up menu.  The IP address allocated to the load balancer **will not** appear in the **External IPs** list for this environment.
-      - To use a public IP address that has already been allocated in this environment, select it from the list.
-      - To reserve a new public IP address that will be not be released when the forwarding rule is deleted, select *Reserve a new static IP address*.  The pop-up menu will disappear, and a new IP address will be allocated when the forwarding rule is created.  The IP address will also appear in the **External IPs** list for this environment.
+      - To use an external IP address that has already been allocated in this environment, select it from the list.
+      - To reserve a new external IP address that will be not be released when the forwarding rule is deleted, select *Reserve a new static IP address*.  The pop-up menu will disappear, and a new IP address will be allocated when the forwarding rule is created.  The IP address will also appear in the **External IPs** list for this environment.
    - Select the protocol to use and which port to listen on for incoming requests.
       - When selecting HTTPS, a target proxy configured for SSL must exist in the environment.
    - From the **Target proxy** pop-up menu, select the target proxy that was configured in the previous step.
@@ -80,7 +80,7 @@ The new load balancer is now active and ready for testing with public traffic.  
 1. The *Forwarding rules* page will appear, and the new forwarding rule will be listed.
 1. The new load balancer will appear under the **Load balancers** item.  It will automatically be given the same name as the selected URL map.
 
-The new load balancer is now active and ready for testing with public traffic.  The public IP address for your load balancer is listed on both the *Forwarding rules* and the *Load balancers* page.
+The new load balancer is now active and ready for testing with public traffic.  The external IP address for your load balancer is listed on both the *Forwarding rules* and the *Load balancers* page.
 
 #### Enabling SSL in the backend
 
