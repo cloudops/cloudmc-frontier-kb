@@ -15,7 +15,7 @@ GCP load balancing is accessed by navigating to the desired GCP environment, cli
 - **Backend service**: Binds together an instance group, a health check for the instances in that group, and the protocol to use for communicating with those instances.
 - **URL map**: Specifies which backend service to send traffic to, based on the request URL.
 - **Target proxy**: Listens for traffic on the specified protocol, and forwards that traffic to the correct backend service, based on the specified URL map.
-- **Forwarding rule**: Binds together an IP address which serves as the endpoint of the load balancer, a protocol and port, and a target proxy.
+- **Forwarding rule**: Binds together an external IP address which serves as the endpoint of the load balancer, a protocol and port, and a target proxy.
 - **Google Front End**: Interface point between GCP and the public Internet.
 
 This model allows for significant flexibility in deployments as well as for re-use of components:
