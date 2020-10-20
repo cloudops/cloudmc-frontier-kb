@@ -19,14 +19,14 @@ Prior to adding an instance, you must have at least one network created in your 
    1. Select the region in which to create the instance.  The region cannot be changed once the instance is created.
    1. You may choose to attach a public IP when the instance is created.  There must be a public IP address already allocated and unattached in the network where the instance is to be created.
    1. Select the subnet to attach to this instance.
-   1. Click *Submit*.  The **Instances** tab will appear.  When the new instance has been created, it will appear in the list, and will be in the **provisioning** state.  Once the instance has been provisioned, it will transition to the **running** state.
+   1. Click *Submit*.  The **Instances** tab will appear.  When the new instance has been created, it will appear in the list, and will be in the **Starting** state.  Once the instance has been provisioned, it will transition to the **Running** state.
 
 ### Get instance details
 
-1. From the **Instances** tab, click on the instance.  This will take you to the *Instance details* page.
-   - On the **Instances** tab, clicking on an instance's name or IP address will copy that data to your clipboard, and will *not* take you to the *Instance details* page.
-1. On the *Instance details* page, clicking on any string will copy it into your clipboard.
-1. Clicking on *Disks* will take you to the *Instance disks* page, where you can add, resize, detach, or delete disks on this instance. See [Azure: Working with disks](azure-working-with-disks.md) for more information.
+1. From the **Instances** tab, click on the instance.  This will take you to the instance *Details* page.
+   - On the **Instances** tab, clicking on an instance's name or IP address will copy that data to your clipboard, and will *not* take you to the instance *Details* page.
+1. On the instance *Details* page, clicking on any string will copy it into your clipboard.
+1. Clicking on *Disks* will take you to the instance *Disks* page, where you can add, resize, detach, or delete disks on this instance. See [Azure: Working with disks](azure-working-with-disks.md) for more information.
 
 ### Stop a running instance
 
@@ -37,12 +37,13 @@ Prior to adding an instance, you must have at least one network created in your 
 ### Starting a stopped instance
 
 1. From the **Instances** tab, click on the **Action** menu to the right of the instance, and select *Start*.
-1. The instance will enter the **Processing** state.  Once the instance is booting, it will enter the **Running** state.
+1. The instance will enter the **Starting** state.  Once the instance is booting, it will enter the **Running** state.
 
 ### Delete an instance
 
-An instance in any state may be deleted.  Any disks attached to the instance, including the boot disk, will remain in the **Detached** state and will not be deleted.
+An instance in any state may be deleted.  By default, the boot disk is deleted with the instance (see below), but all data disks attached to the instance will be detached prior to deleting the instance, and the disks will remain in the **Detached** state.
 
 1. From the **Instances** tab, click on the **Action** menu to the right of the instance, and select *Delete*.
 1. A dialogue box will appear, asking for confirmation to continue.  Click *Submit*.
+   - The dialogue box will also offer the option to delete the boot disk, which is selected by default.  Unselecting this box will detach the boot disk prior to deleting the instance, and the disk will remain in the **Detached** state.
 1. The instance will enter the **Deleting** state.  When the deletion is complete, the instance will be removed from the **Instances** tab.

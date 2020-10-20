@@ -20,7 +20,7 @@ To access disks, navigate to your Microsoft Azure environment and click on the *
 
 ### Attach a disk to an instance
 
-A disk can only be attached to an instance when the disk is in the **Detached** state.
+A disk can only be attached to an instance when the disk is in the **Detached** state.  Also, at least one instance must exist in the region where the disk is located.
 
 1. From the **Disks** tab, click the **Action** menu to the right of the disk you wish to attach, and click *Attach*.
 1. The *Attach* dialogue box will appear.  Select the desired instance from the **Instance** pop-up list.
@@ -32,7 +32,7 @@ A disk can only be attached to an instance when the disk is in the **Detached** 
 **Note:**  Detaching a disk from a running instance may result in disk corruption and data loss.  Always gracefully unmount the volume from within the instance's operating system prior to detaching a disk.
 
 1. From the *Disks* tab, click the **Action** menu to the right of the disk you wish to detach, and click *Detach*.
-1. A dialogue box will appear, asking for confirmation to continue.  Click *Submit*.
+1. The *Detach* dialogue box will appear, asking for confirmation to continue.  Click *Submit*.
 1. The disk will be detached and will return to the **Detached** state.
 
 Alternatively, a disk may be detached from an instance via the *Instance details* page.
@@ -45,12 +45,12 @@ A disk can be resized to increase the amount of storage space allocated.  Disk s
 
 1. From the *Disks* page, click the **Action** menu to the right of the disk you wish to modify, and click *Edit*.
 1. The *Edit* page will appear.
-1. To change the performance type of the disk,
+1. To change the performance type of the disk, select the desired option from the **Type** pop-up list.
 1. To resize the disk, move the **Disk size** slider to the number of gigabytes desired for the disk.
 1. Click *Submit*.  The disk will be modified accordingly, and a notification will appear when the operation has completed.
 1. The filesystem can now be extended from within the instance's operating system.
 
-Alternatively, a disk may be resized if it is attached via the instance's *Instance details* page.
+Alternatively, a disk may be resized if it is attached via the instance's *Disks* page.
 
 ### Delete a disk
 
